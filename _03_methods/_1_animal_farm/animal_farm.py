@@ -6,6 +6,7 @@ from playsound import playsound
 window = None
 
 
+
 def animals():
     global window
     window = Tk()
@@ -13,7 +14,7 @@ def animals():
 
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
-
+    simpledialog.askinteger(title='greeter', prompt="")
     # TODO 2. Make it so that the user can keep entering new animals.
 
     # TODO 3. If the user enters 'exit', stop the program
