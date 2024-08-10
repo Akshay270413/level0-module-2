@@ -1,8 +1,7 @@
 import random
 import sys
-from tkinter import messagebox, Tk
+from tkinter import messagebox, Tk, simpledialog
 from playsound import playsound
-
 
 def crack_the_safe():
     pass
@@ -12,20 +11,18 @@ def crack_the_safe():
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
-wekncrzpasfdkjhcfjse = random.randint(0, 999)
+random_code = random.randint(0, 999)
 
 
 def try_code(guess):
     print("trying " + str(guess))
 
-    secret_code = 999999 - wekncrzpasfdkjhcfjse
+    secret_code = 999999 - hidden
 
     if guess == secret_code:
         messagebox.showinfo(None, "Congratulations! You cracked the safe with " + str(guess))
         play_the_sound_of_success()
         sys.exit(0)
-
-
 def play_the_sound_of_success():
     playsound('me-gusta.wav')
 
